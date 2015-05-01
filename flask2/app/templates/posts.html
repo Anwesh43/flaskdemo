@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+    <div>
+        {% for post in posts %}
+            <div style="width:100px;height:100px;border:1px solid black">
+                <p>{{post.name}}</p>
+                <p>{{post.age}}</p>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

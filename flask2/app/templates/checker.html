@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>
+        {% if user["age"]%2==0 %}
+            {{user["name"]}}'s age is divisible by 2
+        {% else %}
+            {{user["name"]}}'s age is not divisble by 2
+        {% endif %}
+    </h1>
+{% endblock %}
